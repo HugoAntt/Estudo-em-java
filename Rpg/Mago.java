@@ -1,3 +1,4 @@
+package Rpg;
 public class Mago extends Personagem {
 
     public float inteligencia;

@@ -1,3 +1,4 @@
+package Rpg;
 public class Bardo extends Personagem {
 
     public float encanto;

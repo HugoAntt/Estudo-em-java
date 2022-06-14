@@ -1,3 +1,4 @@
+package Rpg;
 public class Druida extends Personagem {
 
     public float invocacao;

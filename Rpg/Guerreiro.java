@@ -1,3 +1,4 @@
+package Rpg;
 public class Guerreiro extends Personagem {
 
     public float forca;

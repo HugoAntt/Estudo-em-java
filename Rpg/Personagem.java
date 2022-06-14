@@ -1,3 +1,4 @@
+package Rpg;
 public class Personagem {
 
     public String nome;
