@@ -1,4 +1,4 @@
-package Rpg;
+package RPG;
 public class Inicio {
     public static void main(String[] args) {
 
