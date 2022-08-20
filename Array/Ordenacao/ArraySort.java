@@ -1,4 +1,4 @@
-package Ordenacao;
+package Array.Ordenacao;
 
 import java.util.Scanner;
 import java.util.Arrays;
