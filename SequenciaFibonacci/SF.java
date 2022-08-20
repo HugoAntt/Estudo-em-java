@@ -1,4 +1,5 @@
 package Sequenciafibonacci;
+
 import java.util.Scanner;
 
 class SF {
@@ -15,14 +16,14 @@ class SF {
      * https://super.abril.com.br/mundo-estranho/o-que-e-a-sequencia-de-fibonacci/
      */
 
-  
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        float n1 = 0, n2 = 1;
-        float n, limit;
+        int n1 = 0, n2 = 1;
+        int n, limit;
         System.out.println("Digite o limite da sua sequência Fibonacci!");
-        limit = s.nextFloat();
+        limit = s.nextInt();
+        System.out.println(2);
 
         while (n2 < limit) {
             n = n1 + n2;
@@ -35,6 +36,7 @@ class SF {
             n2 = n;
 
         }
+
     }
 
 }
