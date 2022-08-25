@@ -9,14 +9,15 @@ public class ArraySort {
         Scanner s = new Scanner(System.in);
         int[] a = new int[6];
 
-        System.out.println("Digite sua sequência de números.");
+        System.out.println("Digite uma sequência de números:");
 
         for (int i = 0; i < 6; i++) {
             a[i] = s.nextInt();
         }
         // A lista está ordenada, porém em hashcode.
-        Arrays.sort(a);
-
+       Arrays.sort(a);
+       
+       //Não está mais em hashcode.
         System.out.println(Arrays.toString(a));
 
     }
