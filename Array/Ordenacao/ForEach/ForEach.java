@@ -4,7 +4,20 @@ import java.util.Scanner;
 
 public class ForEach {
     public static void main(String[] args) {
+       
+        int n=3;
         Scanner sc = new Scanner(System.in);
+        While(n!=1 && n!= 2){
+        System.out.println("Aperte 1 para soma de números.");
+        System.out.println("Aperte 2 para registro de nomes.");
+        n =sc.nextInt();
+        }
+        
+
+    }
+
+    public class soma(){   
+         
         int n, soma = 0;
 
         // Definindo meu índice
@@ -21,8 +34,6 @@ public class ForEach {
         for (int r : a) {
             soma += r;
         }
-        System.out.println("Resultado: "+soma);
-
-    }
-
+        System.out.println("Resultado: "+soma);}
+       
 }
