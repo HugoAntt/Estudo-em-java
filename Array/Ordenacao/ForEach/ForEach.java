@@ -6,18 +6,23 @@ public class ForEach {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int n1 = 0, soma = 0;
+        int soma = 0;
 
         int n = opcao();
-        System.out.println(n);
 
         if (n == 1)
             somar(sc, n, soma);
 
+        // Esse else está sem especificação, pois a validação ja acontecente no método
+        // opção, ou seja, só é retornado os valores que se encaiaxam no if ou else,
+        // nesse caso, 1 ou 2.
+        else
+            nomes(sc, n);
+
     }
 
     public static int opcao() {
-        
+
         int n;
         Scanner sc = new Scanner(System.in);
 
@@ -52,6 +57,27 @@ public class ForEach {
             soma += r;
         }
         System.out.println("Resultado: " + soma);
+    }
+
+    public static void nomes(Scanner sc, int n) {
+
+        System.out.println("Quantos nomes serão armazenados? ");
+
+        n = sc.nextInt();
+
+        String[] nome = new String[n];
+        
+        //Armazenamento
+        for (int i = 0; i < n; i++) {
+
+            System.out.println("Digite o " + (i + 1) + "º nome:");
+            nome[i] = new Scanner(System.in).nextLine();
+        }
+        System.out.println();
+        //Exibição
+        for (int i = 0; i < n; i++) {
+            System.out.println(nome[i]);
+        }
     }
 
 }
