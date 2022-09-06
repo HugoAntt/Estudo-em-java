@@ -6,17 +6,20 @@ public class ForEach {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int n = 0, soma = 0;
-        opcao(sc, n);
+        int n1 = 0, soma = 0;
+
+        int n = opcao();
         System.out.println(n);
 
-        if (n == 1) {
+        if (n == 1)
             somar(sc, n, soma);
-        }
 
     }
 
-    public static int opcao(Scanner sc, int n) {
+    public static int opcao() {
+        
+        int n;
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Aperte 1 para soma de números.");
         System.out.println("Aperte 2 para registro de nomes.");
@@ -28,6 +31,7 @@ public class ForEach {
             System.out.println("Aperte 2 para registro de nomes.");
             n = sc.nextInt();
         }
+
         return n;
     }
 
