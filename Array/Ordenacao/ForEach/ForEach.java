@@ -14,8 +14,9 @@ public class ForEach {
         int[] a = new int[n];
 
         // Preechendo meu array.
-        System.out.println("Digite os números: ");
+
         for (int i = 0; i < n; i++) {
+            System.out.println("Digite o " + (i + 1) + "º número: ");
             a[i] = sc.nextInt();
         }
 

@@ -1,6 +1,5 @@
 package String.Escolha;
 
-
 import java.util.Scanner;
 
 public class Escolha {
@@ -14,9 +13,12 @@ public class Escolha {
         if (n == 1)
             somar(sc, n, soma);
 
-        // Esse else está sem especificação, pois a validação ja acontecente no método
-        // opção, ou seja, só é retornado os valores que se encaiaxam no if ou else,
-        // nesse caso, 1 ou 2.
+        /*
+         * Esse else está sem especificação, pois a validação ja acontece no método
+         * opção, ou seja, só é retornado os valores que se encaiaxam no if ou else,
+         * nesse caso, 1 ou 2.
+         */
+
         else
             nomes(sc, n);
 
@@ -49,8 +51,9 @@ public class Escolha {
         int[] a = new int[n];
 
         // Preechendo meu array.
-        System.out.println("Digite os números: ");
+
         for (int i = 0; i < n; i++) {
+            System.out.println("Digite o " + (i + 1) + "º número: ");
             a[i] = sc.nextInt();
         }
 
@@ -67,15 +70,15 @@ public class Escolha {
         n = sc.nextInt();
 
         String[] nome = new String[n];
-        
-        //Armazenamento
+
+        // Armazenamento
         for (int i = 0; i < n; i++) {
 
             System.out.println("Digite o " + (i + 1) + "º nome:");
             nome[i] = new Scanner(System.in).nextLine();
         }
         System.out.println();
-        //Exibição
+        // Exibição
         for (int i = 0; i < n; i++) {
             System.out.println(nome[i]);
         }
