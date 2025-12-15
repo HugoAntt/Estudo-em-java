@@ -2,7 +2,7 @@ package Seleção.Calculadora;
 
 import java.util.Scanner;
 
-public class Inicio {
+public class Main {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
@@ -26,13 +26,6 @@ public class Inicio {
                     break;
 
                 case 2:
-                    System.out.print("Digite o primeiro número: ");
-                    double num1 = entrada.nextDouble();
-
-                    System.out.print("Digite o segundo número: ");
-                    double num2 = entrada.nextDouble();
-                    entrada.nextLine();
-
                     System.out.println("Escolha a operação:");
                     System.out.println("1 - Soma");
                     System.out.println("2 - Subtração");
@@ -40,6 +33,13 @@ public class Inicio {
                     System.out.println("4 - Divisão");
                     System.out.print("Digite a opção: ");
                     int operacao = entrada.nextInt();
+                    entrada.nextLine();
+
+                    System.out.print("Digite o primeiro número: ");
+                    double num1 = entrada.nextDouble();
+
+                    System.out.print("Digite o segundo número: ");
+                    double num2 = entrada.nextDouble();
                     entrada.nextLine();
 
                     switch (operacao) {
